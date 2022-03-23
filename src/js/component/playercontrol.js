@@ -3,13 +3,13 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
 	faPlay,
 	faPause,
-	faFoward,
+	faForward,
 	faBackward,
 } from "@fortawesome/free-solid-svg-icons";
 
 function PlayerControl() {
 	return (
-		<div className="c-player--controls">
+		<div className="c-player--control">
 			<button className="skip-btn">
 				<FontAwesomeIcon icon={faBackward} />
 			</button>
@@ -18,9 +18,6 @@ function PlayerControl() {
 			</button>
 			<button className="skip-btn">
 				<FontAwesomeIcon icon={faForward} />
-			</button>
-			<button className="skip-btn">
-				<FontAwesomeIcon icon={faBackward} />
 			</button>
 		</div>
 	);

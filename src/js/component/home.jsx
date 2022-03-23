@@ -4,10 +4,11 @@ import Player from "./player";
 const Home = () => {
 	const [songs, setSongs] = useState([
 		{
-			title: "",
-			artist: "Artist 1",
-			img_src: "",
-			src: "",
+			title: "Big Poppa 2007 Remaster",
+			artist: "The Notorious B.I.G",
+			img_src:
+				"https://static01.nyt.com/images/2021/03/03/arts/01biggie/01biggie-superJumbo.jpg?quality=75&auto=webp",
+			src: "https://www.youtube.com/watch?v=QceVTChhlJM",
 		},
 		{
 			title: "",
@@ -43,9 +44,10 @@ const Home = () => {
 
 	const [currentSongIndex, setCurrentSongIndex] = useState(0);
 	const [nextSongIndex, setNextSongIndex] = useState(currentSongIndex + 1);
+
 	return (
-		<div className="container">
-			<player
+		<div className="home">
+			<Player
 				song={songs[currentSongIndex]}
 				nextSong={songs[nextSongIndex]}
 			/>

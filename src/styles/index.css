@@ -21,7 +21,7 @@ body{
     background-color: black;
     padding: 50px;
     border-radius: 16px;
-    box-shadow: ;
+   /*  box-shadow: ; */
 }
 
 .c-player > h4 {
@@ -51,5 +51,49 @@ body{
     width: 100%;
     max-width: 250px;
     border-radius: 50%;
-    box-shadow: ;
+/*     box-shadow: ; */
+}
+
+.c-player--details .details-title {
+    color: white;
+    font-size: 28px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.c-player--details .details-artist {
+    color: rgb(223, 236, 42);
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.c-player--control{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.c-player--control .play-btn{
+    display: flex;
+    margin-bottom: 0 30px;
+    padding: 20px;
+    border-radius: 50%;
+   /*  box-shadow: ; */
+    border: none;
+    outline: none;
+    background-color: grey;
+    color: black;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.c-player--control .skip-btn{
+    background: none;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    color: white;
+    font-style: 18px;
 }
