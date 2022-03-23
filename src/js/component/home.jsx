@@ -1,9 +1,6 @@
-import {useState} from "react";
+import { useState } from "react";
+import Player from "./player";
 
-
-
-
-//create your first component
 const Home = () => {
 	const [songs, setSongs] = useState([
 		{
@@ -42,10 +39,16 @@ const Home = () => {
 			img_src: "",
 			src: "",
 		},
-	])
+	]);
+
+	const [currentSongIndex, setCurrentSongIndex] = useState(0);
+	const [nextSongIndex, setNextSongIndex] = useState(currentSongIndex + 1);
 	return (
-		<div>
-			
+		<div className="container">
+			<player
+				song={songs[currentSongIndex]}
+				nextSong={songs[nextSongIndex]}
+			/>
 		</div>
 	);
 };
