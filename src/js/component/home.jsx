@@ -1,7 +1,7 @@
 import { useState } from "react";
 import Player from "./player";
 
-const Home = () => {
+function Home() {
 	const [songs, setSongs] = useState([
 		{
 			title: "Big Poppa 2007 Remaster",
@@ -53,6 +53,6 @@ const Home = () => {
 			/>
 		</div>
 	);
-};
+}
 
 export default Home;
