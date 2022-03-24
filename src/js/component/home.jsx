@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { useEffect } from "react/cjs/react.production.min";
 import Player from "./player";
 
 function Home() {
@@ -45,11 +46,22 @@ function Home() {
 	const [currentSongIndex, setCurrentSongIndex] = useState(0);
 	const [nextSongIndex, setNextSongIndex] = useState(currentSongIndex + 1);
 
+	useEffect(() => {
+		setNextSongIndex(() => {
+			if (currentSongIndex + 1 > songs.length - 1) {
+				return 0;
+			} else {
+				return currentSongIndex + 1;
+			}
+		});
+	}, [currentSongIndex]);
 	return (
-		<div className="home">
+		<div className="Home">
 			<Player
-				song={songs[currentSongIndex]}
-				nextSong={songs[nextSongIndex]}
+				song={songs}
+				nextSongIndex={nextSongIndex}
+				currentSongIndex={currentSongIndex}
+				setCurrentSongIndex={setCurrentSongIndex}
 			/>
 		</div>
 	);
