@@ -9,14 +9,14 @@ body{
     background-color: rgb(255, 255, 255);
 }
 
-.home{
+.Home{
     display: flex;
     align-items: center;
     justify-content: center;
     min-height: 100vh;
 }
 
--c-player{
+.c-player{
     display: block;
     background-color: black;
     padding: 50px;
