@@ -61,6 +61,7 @@ body{
     width: 100%;
     max-width: 250px;
     border-radius: 50px;
+    box-shadow: 10px 10px 10px 10px black;
 }
 
 .c-player--details .details-title {
