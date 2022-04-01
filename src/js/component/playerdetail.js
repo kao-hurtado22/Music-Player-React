@@ -1,6 +1,6 @@
 import React from "react";
 
-function PlayerDetails(props) {
+function PlayerDetail(props) {
 	return (
 		<div className="c-player--details">
 			<div className="details-img">
@@ -12,4 +12,4 @@ function PlayerDetails(props) {
 	);
 }
 
-export default PlayerDetails;
+export default PlayerDetail;

@@ -6,7 +6,10 @@
 }
 
 body{
-    background-color: rgb(255, 255, 255);
+    background-color: black;
+    background-image: url(https://www.univision.com/proxy/api/cached/picture?href=https%3A%2F%2Fuvn-brightspot.s3.amazonaws.com%2Fassets%2Fvixes%2Fbtg%2Fcuriosidades.batanga.com%2Ffiles%2FComo-se-mide-el-sonido-2.jpg&width=0&height=0&ratio_width=1240&ratio_height=698&format=webp);
+    background-size: cover;
+    background-attachment: fixed;
 }
 
 .Home{
@@ -18,7 +21,12 @@ body{
 
 .c-player{
     display: block;
-    background-color: black;
+    width: 420px;
+    height: 700px;
+    background: linear-gradient(
+        180deg, rgb(158, 167, 224) 0%,
+        rgb(0, 0, 0) 100%
+    );
     padding: 50px;
     border-radius: 16px;
    /*  box-shadow: ; */
@@ -33,10 +41,12 @@ body{
 }
 
 .c-player > p {
-    color: white;
-    font-size: 24px;
+    color: rgb(247, 255, 141);
+    font-size: 15px;
     font-weight: 400;
     text-align: center;
+    position: relative;
+    top:  40px;
 }
 
 .c-player--details .details-img {
@@ -56,13 +66,13 @@ body{
 
 .c-player--details .details-title {
     color: white;
-    font-size: 28px;
+    font-size: 45px;
     text-align: center;
     margin-bottom: 10px;
 }
 
 .c-player--details .details-artist {
-    color: rgb(223, 236, 42);
+    color: rgb(247, 255, 141);
     font-size: 20px;
     text-align: center;
     margin-bottom: 20px;
@@ -83,17 +93,31 @@ body{
    /*  box-shadow: ; */
     border: none;
     outline: none;
-    background-color: grey;
-    color: black;
+    background-color: rgb(22, 225, 55);
+    color: rgb(0, 0, 0);
     font-size: 24px;
     cursor: pointer;
 }
 
-.c-player--control .skip-btn{
+.c-player--control .skip-btn1{
     background: none;
     border: none;
     outline: none;
     cursor: pointer;
     color: white;
     font-style: 18px;
+    position: relative;
+    right: 30px;
+  
+}
+
+.c-player--control .skip-btn2{
+    background: none;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    color: white;
+    font-style: 18px;
+    position: relative;
+    left: 30px;
 }
